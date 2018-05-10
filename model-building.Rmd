@@ -125,7 +125,7 @@ This model now includes four predictors, so it's getting harder to visualise. Fo
 
 ```{r}
 grid <- diamonds2 %>% 
-  data_grid(cut, .model = mod_diamond2) %>% 
+  data_grid(color, cut, clarity, .model = mod_diamond2) %>% 
   add_predictions(mod_diamond2)
 grid
 
